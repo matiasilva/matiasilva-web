@@ -1,8 +1,8 @@
-// @import "./_vendor/bulma/sass/utilities/initial-variables";
-// @import "./_vendor/bulma/sass/utilities/functions";
-@import "_global.scss";
+$fa-font-path: './assets/webfonts';
+$footer-padding: 1.5rem 1.5rem 1.5rem;
 
-$navbar-tab-hover-border-bottom-color: black;
-$navbar-tab-active-border-bottom-color: black;
+@import '_global.scss';
+@import './_vendor/bulma/_bulma.sass';
+@import './_vendor/fontawesome/scss/fontawesome.scss';
+@import './_vendor/fontawesome/scss/brands.scss';
 
-@import "./_vendor/bulma/_bulma.sass";

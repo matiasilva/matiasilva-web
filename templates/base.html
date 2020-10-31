@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="/">
@@ -26,19 +26,19 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item is-tab">
+                    <a class="navbar-item">
                         About
                     </a>
 
-                    <a class="navbar-item is-tab">
+                    <a class="navbar-item">
                         Projects
                     </a>
 
-                    <a class="navbar-item is-tab">
+                    <a class="navbar-item" href="/files/Matias_CV_2020.pdf" target="_blank">
                         CV
                     </a>
 
-                    <div class="navbar-item has-dropdown is-hoverable ">
+                    <!-- <div class="navbar-item has-dropdown is-hoverable ">
                         <a class="navbar-link">
                             Links
                         </a>
@@ -51,20 +51,37 @@
                                 LinkedIn
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-info" href="https://www.linkedin.com/in/matiasilva">
+                                <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                            </a>
+                            <a class="button is-dark" href="https://github.com/matiasilva">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-    <section class="section">
-        <div class="container">
-            {% block content %} {% endblock %}
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Built by <a href="https://github.com/matiasilva">@matiasilva</a> with <a
+                    href="https://getzola.org">Zola</a> and <a href="https://bulma.io">Bulma.</a> The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
         </div>
-    </section>
-    <script src="/main.js"></script>
+    </footer>
+    <script src="/assets/main.js"></script>
 </body>
 
 </html>

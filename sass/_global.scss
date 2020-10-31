@@ -10,17 +10,27 @@ html,
 body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
 }
+
 main {
   flex: 1 0 auto;
 }
+
 .footer {
   flex-shrink: 0;
 }
 
+/* Navbar */
+
 .ms-navbar-text {
   font-weight: 600;
+}
+
+/* Overflow (Bulma is weird) */
+html {
+    overflow-y: auto;
 }

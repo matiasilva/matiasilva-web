@@ -1,8 +1,9 @@
 $fa-font-path: './assets/webfonts';
 $footer-padding: 1.5rem 1.5rem 1.5rem;
 
-@import '_global.scss';
 @import './_vendor/bulma/_bulma.sass';
 @import './_vendor/fontawesome/scss/fontawesome.scss';
 @import './_vendor/fontawesome/scss/brands.scss';
+
+@import '_global.scss';
 

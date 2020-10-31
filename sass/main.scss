@@ -1,0 +1,8 @@
+// @import "./_vendor/bulma/sass/utilities/initial-variables";
+// @import "./_vendor/bulma/sass/utilities/functions";
+@import "_global.scss";
+
+$navbar-tab-hover-border-bottom-color: black;
+$navbar-tab-active-border-bottom-color: black;
+
+@import "./_vendor/bulma/_bulma.sass";

@@ -1,0 +1,27 @@
+{% import "utils/disabled-link.html" as DisabledLink %}
+
+{% macro render(page) %}
+<div class="column is-one-third">
+<div class="card">
+    <div class="card-image">
+        <figure class="image is-4by3">
+            <img src="{{page.path ~ "card.png"}}" alt="Placeholder image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <p class="title is-4">{{page.title}}</p>
+        <p class="subtitle has-text-grey is-6"><time datetime="2016-1-1">{{page.date | date(format="%m/%Y")}}</time></p>
+        <div class="content">
+            {{page.description}}
+        </div>
+    </div>
+    <footer class="card-footer">
+        {% set read_more = page.extra.read_more | default(value=false) %}
+        {% set external_link = page.extra.external_link | default(value=false) %}
+
+        {{ DisabledLink::render(href=external_link, text = "View", extra_classes="card-footer-item", enabled=external_link)}}
+        {{ DisabledLink::render(href=page.permalink | safe, text = "Read more", extra_classes="card-footer-item", enabled=read_more)}}
+    </footer>
+    </div>
+</div>
+{% endmacro render %}

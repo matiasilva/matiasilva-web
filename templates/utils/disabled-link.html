@@ -1,0 +1,7 @@
+{% macro render(href, text, enabled, extra_classes) %}
+{% if enabled %}
+<a href="{{ href }}" class="card-footer-item">{{text}}</a>
+{% else %}
+<a class="{{extra_classes}} ms-a-disabled has-text-grey">{{text}}</a>
+{% endif %}
+{% endmacro render %}

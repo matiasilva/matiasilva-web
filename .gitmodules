@@ -1,0 +1,3 @@
+[submodule "static/project-files/p5-projects"]
+	path = static/project-files/p5-projects
+	url = https://github.com/matiasilva/p5-projects.git

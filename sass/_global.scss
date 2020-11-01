@@ -38,3 +38,9 @@ html {
 .ms-a-disabled {
     cursor: not-allowed;
 }
+
+.ms-centered-image {
+    @include mobile;
+    margin-left: auto;
+    margin-right: auto;
+}

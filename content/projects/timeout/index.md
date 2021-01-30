@@ -8,7 +8,7 @@ read_more = true
 external_link = "https://timeout.srcf.net"
 +++
 
-For my work on Timeout, I was [given an award](https://www.cctl.cam.ac.uk/oscea/winners-2020/edwin-matias) by my University, signed by the Pro-Vice Chancellor for Education.
+For my work on Timeout, I was [given an award](https://www.cctl.cam.ac.uk/oscea/winners-2020/edwin-matias) by my University, signed by the Pro-Vice Chancellor for Education. Here's another [news post](http://www.eng.cam.ac.uk/news/engineering-undergraduates-achievements-recognised-university-awards) by the Engineering Department.
 
 I've written two blog posts on Timeout, one on [its historical origins](https://blog.srcf.net/posts/timeout/) and another on [its technical aspects](https://blog.srcf.net/posts/timeout-diy/).
 

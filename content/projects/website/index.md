@@ -1,8 +1,7 @@
 +++
 title = "Personal website"
-description = "Using Zola as a static site generator and Bulma for basic CSS, hosted on my own server running CentOS with nginx"
-date = 2020-10-09
+description = "Using Hugo as a static site generator and my own theme, hosted on GH pages with CI"
+date = 2021-03-13
 
-[extra]
-external_link = "https://www.matiasilva.com"
+externalLink = "https://www.matiasilva.com"
 +++

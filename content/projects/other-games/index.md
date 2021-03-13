@@ -2,9 +2,6 @@
 title = "Assorted games"
 description = "A range of games I made from 2015-2017 using p5.js and occasionally, physics libraries and/or Firebase for score tracking"
 date = 2017-01-01
-
-[extra]
-read_more = true
 +++
 
 ## List of games

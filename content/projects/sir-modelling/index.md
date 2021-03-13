@@ -3,9 +3,7 @@ title = "Modelling of diseases"
 description = "Using a simple Sick/Infected/Recovered model to track how diseases can spread in a community"
 date = 2020-04-14
 
-[extra]
-external_link = "/project-files/p5-projects/sir_modelling"
-read_more = true
+externalLink = "/project-files/p5-projects/sir_modelling"
 +++
 
 I was bored and in a world where doom and gloom were around me, so I decided to model that. A lot of the inspiration for this came from a video I watched by 3Blue1Brown about modelling infectious diseases, like COVID-19.

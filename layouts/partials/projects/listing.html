@@ -2,12 +2,12 @@
 <div class="card">
     <div class="card-image">
         <figure class="image is-4by3">
-            <img src="card.png" alt="Placeholder image">
+            <img src="{{.RelPermalink}}card.png" alt="Placeholder image">
         </figure>
     </div>
     <div class="card-content">
         <p class="title is-4">{{ .Title}}</p>
-        <p class="subtitle has-text-grey is-6"><time datetime="2016-1-1">{{ .Date.Format "2006-01-02" }}</time></p>
+        <p class="subtitle has-text-grey is-6"><time datetime="2016-1-1">{{ .Date.Format "01/2006" }}</time></p>
         <div class="content">
             {{ .Description }}
         </div>

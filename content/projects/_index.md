@@ -1,9 +1,4 @@
 +++
 title = "Projects"
 description = "A list of projects that I have worked on and contributed to in the past."
-sort_by = "date"
-weight = 0
-template = "projects.html"
-page_template = "projects/project-page.html"
-render = true
 +++

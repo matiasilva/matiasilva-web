@@ -1,0 +1,5 @@
+{{ if .Get "enabled" }}
+<a href="{{ .Get "href" }}" class="card-footer-item">{{ .Get "text"}}</a>
+{{ else }}
+<a class="{{ .Get "extra_classes" }} ms-a-disabled has-text-grey">{{ .Get "text"}}</a>
+{{ end }}

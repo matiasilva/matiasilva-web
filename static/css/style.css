@@ -32,15 +32,32 @@ main {
 
 /* Overflow (Bulma is weird) */
 html {
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 .ms-a-disabled {
-    cursor: not-allowed;
+  cursor: not-allowed;
+  
 }
 
 .ms-centered-image {
-    @include mobile;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+}
+
+@media only screen and (max-width: 768px) {
+  .ms-centered-image {
+    max-width: 256px;
+  }
+}
+
+.footer {
+  padding: 1rem 1.5rem 1rem;
+}
+
+/* override default Bulma value for sticky footer*/
+.hero.is-fullheight {
+  min-height: unset;
+  height:100%;
 }

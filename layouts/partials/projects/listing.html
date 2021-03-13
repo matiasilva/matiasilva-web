@@ -1,0 +1,25 @@
+<div class="column is-one-third">
+<div class="card">
+    <div class="card-image">
+        <figure class="image is-4by3">
+            <img src="card.png" alt="Placeholder image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <p class="title is-4">{{ .Title}}</p>
+        <p class="subtitle has-text-grey is-6"><time datetime="2016-1-1">{{ .Date.Format "2006-01-02" }}</time></p>
+        <div class="content">
+            {{ .Description }}
+        </div>
+    </div>
+    <footer class="card-footer">
+        {{/* 
+        {% set read_more = page.extra.read_more | default(value=false) %}
+        {% set external_link = page.extra.external_link | default(value=false) %}
+
+        {{ DisabledLink::render(href=external_link, text = "View", extra_classes="card-footer-item", enabled=external_link)}}
+        {{ DisabledLink::render(href=page.permalink | safe, text = "Read more", extra_classes="card-footer-item", enabled=read_more)}}
+        */}}
+    </footer>
+    </div>
+</div>

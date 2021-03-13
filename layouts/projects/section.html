@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">
+            {{ .Title }}
+        </h1>
+        <article class="columns is-multiline">
+            {{ range $page := .Pages}}
+            {{ partial "projects/listing.html" $page }}
+            {{ end }}
+        </article>
+    </div>
+</section>
+
+{{end}}

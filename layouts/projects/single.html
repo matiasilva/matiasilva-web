@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section class="container section">
+    <h1 class="title is-2">
+        {{ .Title }}
+      </h1>
+      <p class="subtitle is-4 has-text-grey">{{ .Date.Format "2006-01-02" }}</p>
+      <article class="content">{{ .Content | safeHTML }}</article>
+</section>
+{{end}}

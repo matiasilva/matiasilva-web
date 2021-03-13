@@ -6,7 +6,7 @@
             {{ .Title }}
         </h1>
         <article class="columns is-multiline">
-            {{ $sorted := sort .Pages ".Date" "asc" }}
+            {{ $sorted := sort .Pages ".Date" "desc" }}
             {{ range $page := $sorted}}
             {{ partial "projects/listing.html" $page }}
             {{ end }}

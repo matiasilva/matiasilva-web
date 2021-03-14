@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="container section">
+    <h1 class="title is-2">
+        {{ .Title }}
+    </h1>
+    {{with .Description}}
+    <h3 class="subtitle is-5">{{.}}</h3>
+    {{end}}
+    <article class="content">
+        {{ .Content }}
+    </article>
+</section>
+{{ end }}

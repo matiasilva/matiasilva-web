@@ -1,28 +1,34 @@
 {{ define "main" }}
-<h1 class="title is-1">{{.Title}}</h1>
-<h3 class="subtitle is-5">{{.Description}}</h3>
-<!-- <nav class="level">
-    <p class="level-item">All</p>
-    <p class="level-item"><a>Published</a></p>
-    <p class="level-item"><a>Drafts</a></p>
-    <p class="level-item"><a>Deleted</a></p>
-</nav> -->
 <div class="container is-max-desktop">
-    {{ range .Pages }}
-    <div class="card">
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <a href="{{.RelPermalink}}" class="title is-4">{{ .Title }}</a>
-              <p class="subtitle is-6"> {{.Date.Format "January 2, 2006" }}</p>
-            </div>
-          </div>
-      
-          <div class="content">
-            {{ .Summary | truncate 230 }}
-          </div>
-        </div>
-      </div>
+
+  <section class="section">
+    <h1 class="title is-1 has-text-centered">{{.Title}}</h1>
+    <article class="notification">
+      <h3 class="subtitle is-5 has-text-centered">{{.Description}}</h3>
+      <nav class="level ms-tags-level">
+        {{$taxo := "tags"}}
+        <p class="level-item"><a href="/{{$taxo |urlize}}">all ({{len $.Pages}})</a></p>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }} <p class="level-item"><a
+            href="/{{$taxo}}/{{ $name | urlize}}">{{$name}} ({{len $taxonomy}})</a></p>
+        {{end}}
+      </nav>
+    </article>
+
+  </section>
+
+  <section>
+
+    {{ range $i, $page := .Pages }}
+
+    {{ partial "journal/listing.html" $page}}
+
+    {{ $last_index := sub (len $.Pages) 1 }}
+    {{if ne $i $last_index }}
+    <hr class="no-spacing">
+    {{end}}
+
     {{ end }}
+  </section>
+
 </div>
 {{ end }}

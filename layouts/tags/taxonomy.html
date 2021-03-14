@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="container section">
+    <h1 class="title is-3 is-spaced">
+        <span class="icon-text">
+            <span class="icon">
+                <i class="fas fa-tags"></i>
+            </span>
+            {{.Title}} ({{len .Data.Terms}})
+        </span>
+    </h1>
+    <h3 class="subtitle is-5">{{.Description}}</h3>
+    <table class="table is-hoverable is-fullwidth">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Count</th>
+                <th>Most recent</th>
+                <th>-</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range .Data.Terms.Alphabetical }}
+            <tr>
+                <th> {{.Term | humanize }}
+                </th>
+                <td>{{.Count}} entries
+                </td>
+                {{ $recent := index .Pages.ByDate 0 }}
+                <td><a href="{{$recent.Permalink}}">{{$recent.Title | truncate 50}}</a></td>
+                <td><a href="{{.Term}}">View all</a>
+                </td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+</div>
+{{ end }}

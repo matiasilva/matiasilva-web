@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="container is-max-desktop">
+
+    <section class="section">
+        <article class="has-text-centered">
+            <h1 class="title is-1 is-spaced">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-tags"></i>
+                    </span>
+                    {{.Title}}
+                </span></h1>
+            {{with .Description}}
+            <h3 class="subtitle is-5">{{.}}</h3>
+            {{end}}
+        </article>
+    </section>
+    <div class="divider no-spacing">{{len .Data.tag}} entries</div>
+    <section>
+        {{ range $i, $page := .Data.tag }}
+        
+        {{ partial "journal/listing" $page}}
+
+        {{ $last_index := sub (len $.Data.tag) 1 }}
+        {{if ne $i $last_index }}
+        <hr class="no-spacing">
+        {{end}}
+
+        {{ end }}
+    </section>
+
+</div>
+{{ end }}

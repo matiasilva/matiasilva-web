@@ -2,9 +2,8 @@
 
 <section class="section">
     <div class="container">
-        <h1 class="title">
-            {{ .Title }}
-        </h1>
+        <h1 class="title is-1">{{.Title}}</h1>
+        <h3 class="subtitle is-5">{{.Description}}</h3>
         <article class="columns is-multiline">
             {{ $sorted := sort .Pages ".Date" "desc" }}
             {{ range $page := $sorted}}

@@ -1,6 +1,7 @@
 baseURL = "https://www.matiasilva.com"
 languageCode = "en-us"
 title = "matias silva"
+summaryLength = 50
 
 [params]
     description = "Engineering undergrad at the University of Cambridge"

@@ -2,6 +2,7 @@
 title = "Une histoire personelle"
 date = 2021-03-14T17:56:54Z
 tags = ["french"]
+summary = "*Quelle est ton histoire?*"
 draft = false
 +++
 

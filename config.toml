@@ -4,3 +4,30 @@ title = "matias silva"
 
 [params]
     description = "Engineering undergrad at the University of Cambridge"
+
+[markup]
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[menu]
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 0
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 1
+
+    [[menu.main]]
+    name = "Journal"
+    url = "/projects/"
+    weight = 2
+
+    [[menu.main]]
+    name = "CV"
+    url = "/files/Matias_CV_2021.pdf"
+    weight = 2

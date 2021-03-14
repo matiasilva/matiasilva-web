@@ -1,11 +1,24 @@
 {{ define "main" }}
 <section class="container section">
-    <h1 class="title is-2">
-        {{ .Title }}
-    </h1>
-    {{with .Description}}
-    <h3 class="subtitle is-5">{{.}}</h3>
-    {{end}}
+    <article class="is-flex is-flex-direction-row is-justify-content-space-between is-align-items-center block">
+        <div>
+            <h1 class="title is-2">
+                {{ .Title }}
+            </h1>
+            {{with .Description}}
+            <h3 class="subtitle is-5">{{.}}</h3>
+            {{end}}
+        </div>
+        <div>
+            <p class="subtitle is-6 has-text-grey">
+                <span class="icon">
+                    <i class="far fa-calendar-alt"></i>
+                </span>
+                {{.Date.Format "January 2, 2006" }}
+            </p>
+        </div>
+    </article>
+
     <article class="content">
         {{ .Content }}
     </article>

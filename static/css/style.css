@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* Fonts */
 
 * {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* this could probably be improved */
+
+h1, h2, h3, h4, h5, h6, .footer *, .navbar  a,span {
   font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -24,21 +33,23 @@ main {
   flex-shrink: 0;
 }
 
+.hero.is-fullheight {
+  min-height: unset;
+  height: 100%;
+}
+
+/* correct odd bulma behavior */
+html {
+  overflow-y: auto;
+}
+
 /* Navbar */
 
 .ms-navbar-text {
   font-weight: 600;
 }
 
-/* Overflow (Bulma is weird) */
-html {
-  overflow-y: auto;
-}
-
-.ms-a-disabled {
-  cursor: not-allowed;
-  
-}
+/* Home */
 
 .ms-centered-image {
   margin-left: auto;
@@ -52,12 +63,29 @@ html {
   }
 }
 
+/* Footer */
+
 .footer {
   padding: 1rem 1.5rem 1rem;
 }
 
-/* override default Bulma value for sticky footer*/
-.hero.is-fullheight {
-  min-height: unset;
-  height:100%;
+/* Projects */
+
+.ms-a-disabled {
+  cursor: not-allowed;
+}
+
+/* Journal */
+
+.ms-tags-level {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+hr.no-spacing {
+  margin: 0 0 1.5rem 0;
+}
+
+.divider.no-spacing {
+  margin: 0 0 1.5rem 0;
 }

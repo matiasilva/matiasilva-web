@@ -4,7 +4,7 @@ This is my personal website, built with Hugo and my own custom theme on top of B
 
 ## Motivation & my philosophy
 
-I want editing this website to be as easy as possible. It's so easy to create a static website using a random theme, push it to GitHub, and just forget about it. Heck, I've done it a few times myself. The number one culprit, for me at least, is the excessive "friction" that exists in going from an idea to a post on the website. This is why having a solid development environment pays off massively in the long run, and why pouring hours into making the website as extensible as possible is worth it! Eventually, adding a new page Just Works.
+I want editing this website to be as easy as possible. It's so easy to create a static website using a random theme, push it to GitHub, and just forget about it. Heck, I've even done it a few times myself. The number one culprit, for me at least, is the excessive "friction" that exists in going from an idea to a post on the website. This is why having a solid development environment pays off massively in the long run, and why pouring hours into making the website as extensible as possible is worth it! Eventually, adding a new page Just Works.
 
 Maintenance should also be easy. This is why I try to rely on as few dependencies as possible (but the ones I use, I get from a CDN so users are more likely to have it cached) and avoid esoteric functions, variables or practices. I don't want to come back to this 5 months down the line and go "huh?".
 

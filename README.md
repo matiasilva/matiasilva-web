@@ -16,7 +16,7 @@ In line with this theme, the website is hosted on GitHub Pages and built on push
 
     This automatically starts the VS Code remote SSH tunnel to a Raspberry Pi 3B+ on my local subnet and puts me into the Git repository for this website. Simple and super convenient! Also, I get the command line on the side if I don't want to click around the GUI.
 
-2. `hugo new journal/rainbows.md`
+2. `hugo new journal/rainbows.md` or `hugo new --kind journal journal/hello` for a bundle
 3. Update frontmatter
 4. Add assets as necessary
 5. Commit and push

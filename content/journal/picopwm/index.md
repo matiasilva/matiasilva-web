@@ -44,7 +44,7 @@ This way we can control the duty cycle by setting a different level and we can c
 
 Note: the Pico's PWM slices can also be used to measure input signals, but I won't get into that in this guide just yet!
 
-## Programming
+## The C code
 
 {{< notification type="info" >}}
 The relevant part of the fantastic Pico C/C++ SDK documentation is "hardware_pwm" starting on page 155.
@@ -54,7 +54,7 @@ Naturally from the above explanation, a few parameters fall out: the channel lev
 
 After playing around with the SDK, I recommend using the slice configuration method, in which the two values mentioned before and a few others are encapsulated in a nice `struct`, which we pass to the slice on initialization. The other way is to individually set settings for a slice, which is OK for experimenting or if you're using one slice only, but using the config method is more robust, in my opinion.
 
-One fun way to visualize the dividing factor's effect, is to set it to it's max value of 255 and attach the the built-in LED to a PWM channel. This is the slowest possible setting for the PWM and I used it to figure out how to use the SDK as I don't have an oscilloscope. This could look something like:
+One fun way to visualize the dividing factor's effect, is to set it to its max value of 255 and attach the the built-in LED to a PWM channel. This is the slowest possible setting for the PWM and I used it to figure out how to use the SDK as I don't have an oscilloscope. This could look something like:
 
 ```C
 // set the built-in LED as a PWM pin
@@ -82,6 +82,6 @@ Now all that's left is to compile the code and flash the board. I've covered how
 
 ## Conclusion
 
-I hope this guide helped you understand how the PWM blocks and the Pico's PWM API works. Make sure to read the C/C++ SDK documentation for more information on specific functions or even better give this a go!
+I hope this guide helped you understand how the Pico's PWM blocks work. Though I covered the Pico, the basic concepts are easily extendable to other micro-controller platforms (I came from Arduino myself). One notable difference is how thing the Pico's hardware APIs are, which is really cool! Make sure to read the C/C++ SDK documentation for more information on specific functions or even better, play around with PWM yourself!
 
-If you find any incorrect information, please contact me on the address listed in my GitHub profile. Thanks!
+If you find any incorrect information or want to suggest improvements, please open an issue/pull request.

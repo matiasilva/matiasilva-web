@@ -1,5 +1,7 @@
 baseURL = "https://www.matiasilva.com"
+description = "Matias Silva is an engineering undergrad at the University of Cambridge. This is his website."
 languageCode = "en-us"
+enableRobotsTXT = true
 title = "matias silva"
 summaryLength = 50
 

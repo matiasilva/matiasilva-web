@@ -3,7 +3,7 @@ title = "Beginner's guide to PWM on the Pico"
 date = 2021-03-15T13:23:47Z
 tags = ["software", "electronics"]
 summary = "Learn how to use the Rasberry Pi Pico's pulse width modulation blocks to produce analog-like signals for dimming LEDs, timers, and more!"
-draft = true
+draft = false
 +++
 
 The Raspberry Pi Pico is an accessible ARM Cortex-based micro-controller for makers. It's jam-packed with cool stuff, one of which is its PWM blocks. In this brief guide I go over how the PWM functionality of the Pico works and a few PWM basics. This hopefully helps fill in more of the gaps that exist out there in the C/C++ programming guides for the Pico.

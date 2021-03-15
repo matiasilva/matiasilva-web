@@ -28,10 +28,5 @@ noClasses = false
     url = "/journal/"
     weight = 3
 
-  [[menu.main]]
-    name = "CV"
-    url = "/files/Matias_CV_2021.pdf"
-    weight = 4
-
 [taxonomies]
   tag = "tags"

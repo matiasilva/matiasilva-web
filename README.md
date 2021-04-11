@@ -29,6 +29,10 @@ With my philosophy in mind, you can see just how easy it is to go from "idea" to
 
 To add a post summary, either set the `summary` in the post front matter or let Hugo truncate to 50 words automatically. I've found that using `<!--more-->` leads to inconsistent behaviors with `<p>` if the text has HTML styling.
 
+## Requirements
+
+Just the Hugo binary :)
+
 ## Notes
 
 * This used to be built with Zola, a great static site generator built with Rust. Unfortunately, they don't build for ARMv8 nor `armhf` and after spending several hours attempting to cross-compile I decided to switch to Hugo.

@@ -1,3 +1,6 @@
-<figure class="image">
+<figure class="image is-flex is-flex-direction-row is-justify-content-center">
     <img src="{{ .Get "src" }}">
 </figure>
+{{ with .Inner}}
+<p class="subtitle is-6 has-text-gray has-text-centered">{{.}}</p>
+{{ end }}

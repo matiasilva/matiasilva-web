@@ -27,7 +27,8 @@ A few notes:
 
 ### Simon says -- a memory game
 
-{{ figure(src="simon.png") }}
+{{ < figure src="{{ ref "simon.png" }}" > }}
+{{ < /figure >}}
 
 This game consists of a series of four squares arranged in a grid. After the user inputs their name and views an initial animation, a sequence is generated and displayed on all squares. That is, each square changes its color to represent a pattern and the user must then click each square in the order that they changed color to move on. The interface provides feedback to the user by highlighting the square he/she is currently over and increases in size if he/she clicks it. Each successful level adds more difficulty with shorter display times and more squares to click. If the user loses, he/she is shown a scoreboard and given an option to try again.
 

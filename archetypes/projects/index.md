@@ -1,7 +1,7 @@
 +++
 title = ""
 description = ""
-date: {{ .Date }}
+date = {{ .Date }}
 
 externalLink = ""
 +++

@@ -82,6 +82,6 @@ Now all that's left is to compile the code and flash the board. I've covered how
 
 ## Conclusion
 
-I hope this guide helped you understand how the Pico's PWM blocks work. Though I covered the Pico, the basic concepts are easily extendable to other micro-controller platforms (I came from Arduino myself). One notable difference is how thing the Pico's hardware APIs are, which is really cool! Make sure to read the C/C++ SDK documentation for more information on specific functions or even better, play around with PWM yourself!
+I hope this guide helped you understand how the Pico's PWM blocks work. Though I covered the Pico, the basic concepts are easily extendable to other micro-controller platforms (I came from Arduino myself). One notable difference is how thin the Pico's hardware APIs are, which is really cool! Make sure to read the C/C++ SDK documentation for more information on specific functions or even better, play around with PWM yourself!
 
 If you find any incorrect information or want to suggest improvements, please open an issue/pull request.
